@@ -30,6 +30,7 @@ namespace FanoutAPIV1
             }
 
             app.UseMetricServer();
+            app.UseHttpMetrics();
             app.UseRequestMiddleware();
 
             app.UseRouting();
